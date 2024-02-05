@@ -4,6 +4,7 @@ body {
     align-items: center; 
     height: 100vh; 
     margin: 0; 
+    background-color: black;
 }
 
 .buttons_div {
@@ -15,7 +16,7 @@ body {
     justify-content: center;
     grid-template-columns: 0.25fr 0.25fr; 
     /* to adjust distance btw buttons */
-    column-gap: 18vh;
+    column-gap: 15vh;
     
 }
 .button{
@@ -27,6 +28,9 @@ body {
     /* height: 50px; */
     /* width: 10px; */
     font-size:30px;
+    background-color:grey;
+    color: white;
+    border-radius: 20px;
 }
 
 #button_yes {
@@ -34,6 +38,10 @@ body {
 }
 
 #button_no {
-     
+    
+    margin-left: 40vh;
+    width: 95px;
+    position:absolute; 
+    transition: linear 0.2s;
 }
 
