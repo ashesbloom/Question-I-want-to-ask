@@ -8,17 +8,17 @@ body {
 }
 
 .buttons_div {
-    height: auto; /* Change height to auto */
-    width: 80%; /* Adjust width as needed */
-    max-width: 500px; /* Set maximum width */
+    height: auto;
+    width: 80%;
+    max-width: 500px;
     border: 1px solid black;
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 0.25fr 0.25fr; 
-    /* to adjust distance btw buttons */
+    grid-template-columns: 0.4fr 0.4fr;
+    /* for adjusting button width */
     column-gap: 15vh;
-    padding: 10px; /* Add padding as needed */
+    padding: 10px;
 }
 .button {
     display: flex;
@@ -34,26 +34,95 @@ body {
 
 #button_no {
     margin-left: 40vh;
-    width: 95px;
+    width: 155px;
     position: absolute; 
     transition: linear 0.2s;
 }
 
-/* Media Query for Mobile Phones */
 @media only screen and (max-width: 600px) {
+    body {
+        height: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        margin: 0; 
+        background-color: black;
+    }
+    
     .buttons_div {
-        width: 90%; /* Adjust width for smaller screens */
-        grid-template-columns: 1fr; /* Change to single column layout */
-        column-gap: 10px; /* Adjust gap between buttons */
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid black;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 0.4fr;
+        /* !! don't forget to change in the height section */
+        /* for adjusting button width */
+        row-gap:10px;
+        padding: 10px;
     }
-
     .button {
-        font-size: 20px; /* Adjust font size for smaller screens */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 1px solid black;
+        font-size: 25px;
+        background-color: grey;
+        color: white;
+        border-radius: 20px;
     }
-
     #button_no {
-        margin-left: 20px; /* Adjust margin for smaller screens */
-        position: relative; /* Reset position to default */
-        width: auto; /* Allow width to adjust based on content */
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        transition: linear 0.2s;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    body {
+        height: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        margin: 0; 
+        background-color: black;
+    }
+    
+    .buttons_div {
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid black;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 0.4fr;
+        /* !! don't forget to change in the width section */
+        /* for adjusting button width */
+        row-gap:10px;
+        padding: 10px;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 1px solid black;
+        font-size: 25px;
+        background-color: grey;
+        color: white;
+        border-radius: 20px;
+    }
+    #button_no {
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        transition: linear 0.2s;
     }
 }
