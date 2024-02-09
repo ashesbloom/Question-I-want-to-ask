@@ -1,13 +1,20 @@
 body {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+    display:flex;
     height: 100vh; 
     margin: 0; 
     background-color: black;
+    font-family: sans-serif;
 }
-
+.question {
+    font-size: 15vh;
+    left: 10vh;
+    color: white;
+    position: absolute;
+    top: 13vh;
+}
 .buttons_div {
+    margin-top: 60vh;
+    margin-left:6vh;
     height: auto;
     width: 80%;
     max-width: 500px;
@@ -58,9 +65,11 @@ a span{
     z-index: 1;
 }
 #button_yes {
+    display: flex;
     transition:1s;
 }
 #button_no {
+    display: flex;
     margin-left: 40vh;
     width: 155px;
     position: absolute; 
@@ -77,8 +86,16 @@ a span{
         margin: 0; 
         background-color: black;
     }
+    .question {
+        font-size: 12vh;
+        left: 5vh;
+        color: white;
+        position: absolute;
+        top: 13vh;
+    }
     
     .buttons_div {
+        margin-bottom: 10vh;
         height: auto;
         width: 100%;
         max-width: 500px;

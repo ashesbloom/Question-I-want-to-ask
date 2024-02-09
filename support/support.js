@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             alert('ok then');
             loop++;
         }
-        if(loop <0 ){
+        if(loop <= 20 ){
             button.style.position = 'absolute';
             button.style.left = Math.floor(Math.random() * (maxwidth +1)) + 'px';
             button.style.top = Math.floor(Math.random() * (maxheight +1)) + 'px';
