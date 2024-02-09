@@ -15,12 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('mouseover', () => {
         if (loop == 20){
             alert('Well ¬_¬ !');
-            alert('Do whatever your heart desires!');
+            alert('Do whatever you want!');
             confirm("you have selected no! there is no going back!");
             alert('ok then');
             loop++;
         }
-        if(loop < 25){
+        if(loop <= 2){
             button.style.left = Math.floor(Math.random() * (maxwidth +1)) + 'px';
             button.style.top = Math.floor(Math.random() * (maxheight +1)) + 'px';
             loop++;

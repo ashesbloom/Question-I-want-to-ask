@@ -1,4 +1,4 @@
-function user_response_1(){
+function user_response_yes(){
     Email.send({
         SecureToken : "eeea90b8-2805-426c-8dd6-445f948f58da",
         // To : 'doctorvirtucare@gmail.com',
@@ -6,10 +6,14 @@ function user_response_1(){
         // Subject : "User response has been submitted!",
         // Body : "<h3> User selected <br><h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>YES..</u></b></h2></h3>"
     }).then(
-      message => alert(message)
+      message => {
+        alert(message);
+        location.reload();
+        
+      }
     );
 };
-function user_response_2(){
+function user_response_no(){
   Email.send({
       SecureToken : "eeea90b8-2805-426c-8dd6-445f948f58da",
       // To : 'doctorvirtucare@gmail.com',
@@ -17,7 +21,10 @@ function user_response_2(){
       // Subject : "User response has been submitted!",
       // Body : "<h3> User selected <br><h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>NO</u></b></h2></h3>"
   }).then(
-    message => alert(message)
+    message => {
+      alert(message)
+      location.reload();
+    }
   );
 }
 
