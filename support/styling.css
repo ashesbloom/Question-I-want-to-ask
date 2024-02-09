@@ -32,13 +32,28 @@ body {
     border-radius: 20px;
 }
 
-/* #button_yes {
-
-} */
-
 #button_no {
     margin-left: 40vh;
     width: 95px;
     position: absolute; 
     transition: linear 0.2s;
+}
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 600px) {
+    .buttons_div {
+        width: 90%; /* Adjust width for smaller screens */
+        grid-template-columns: 1fr; /* Change to single column layout */
+        column-gap: 10px; /* Adjust gap between buttons */
+    }
+
+    .button {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    #button_no {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        position: relative; /* Reset position to default */
+        width: auto; /* Allow width to adjust based on content */
+    }
 }
