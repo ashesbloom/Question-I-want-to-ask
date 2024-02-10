@@ -5,6 +5,7 @@ body {
     background-color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-rendering: auto;
+    cursor:default;
 }
 .question {
     font-family: sans-serif;
@@ -78,7 +79,7 @@ body {
     transition:1s;
 }
 #button_no {
-    display: flex;
+    /* display: flex; */
     margin-left: 40vh;
     width: 155px;
     position: absolute; 
@@ -94,6 +95,15 @@ body {
     font-size: 12px;
     text-rendering: auto;
 
+}
+.light{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y), transparent 5%, rgba(0,0,0,0.95) 15%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -199,3 +209,4 @@ body {
         text-rendering: auto;
     }
 }
+/*test*/

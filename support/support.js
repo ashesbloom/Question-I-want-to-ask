@@ -3,6 +3,15 @@ const buttonWidth = 150;
 const maxwidth  = window.innerWidth - buttonWidth;
 const maxheight = window.innerHeight - buttonHeight;
 
+
+window.addEventListener('DOMContentLoaded', () => {
+    const pos = document.documentElement;
+    pos.addEventListener('mousemove', e => {
+        pos.style.setProperty('--x', e.clientX + 'px');
+        pos.style.setProperty('--y', e.clientY + 'px');
+    });
+});
+
 var loop = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -37,3 +46,4 @@ window.addEventListener('blur', () => {
 window.addEventListener('focus', () => {
     document.title = doctitle;
 });
+//test
