@@ -1,4 +1,4 @@
 # Question-I-want-to-ask
 ## ❇️[Preview](https://ashesbloom.github.io/Question-I-want-to-ask/)
-<br>yet to complete<br>
+
 A fun project for my fellow nerds to ask a question they never get to ask! 
