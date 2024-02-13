@@ -6,12 +6,16 @@ const maxheight = window.innerHeight - buttonHeight;
 
 window.addEventListener('DOMContentLoaded', () => {
     const pos = document.documentElement;
+    const light = document.getElementById('light');
+
     pos.addEventListener('mousemove', e => {
         pos.style.setProperty('--x', e.clientX + 'px');
         pos.style.setProperty('--y', e.clientY + 'px');
+        light.style.removeProperty('background');
+        light.style.background = `radial-gradient(circle at var(--x) var(--y), transparent 3%, rgba(0,0,0,0.93) 15%)`;
+
     });
 });
-
 var loop = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -46,4 +50,3 @@ window.addEventListener('blur', () => {
 window.addEventListener('focus', () => {
     document.title = doctitle;
 });
-//test
