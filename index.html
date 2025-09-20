@@ -14,14 +14,18 @@
         <div><span>Do you like <br> the website?</span></div>
     </div>
     <div class="buttons_div">
-        <a href="#" style="--clr:#7fff00" id="button_yes" class="button" onclick="user_response_yes()"><span>Yeah</span></a>
-        <a href="#" style="--clr: 0 0 130px crimson;" id="button_no" class="button" onclick="user_response_no()"><span>Nope</span></a>
+        <a href="#" style="--clr:#7fff00" id="button_yes" class="button" onclick="sendUserResponse('Yes', noButtonAttempts)"><span>Yeah</span></a>
+        <a href="#" style="--clr: 0 0 130px crimson;" id="button_no" class="button" onclick="sendUserResponse('No')"><span>Nope</span></a>
     </div>
     <div class="footer_text">
-        <p>Authored by:&nbsp;&nbsp;<a href="https://www.linkedin.com/in/onlinerecord-mayank/" target="_blank" style="text-decoration: none;">Mayank Pandey</a><p>
+        <p>Authored by:&nbsp;&nbsp;<a href="https://www.linkedin.com/in/onlinerecord-mayank/" target="_blank" rel="noopener noreferrer" class="no-underline">Mayank Pandey</a></p>
     </div>
     <div class="light" id="light"></div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="support/user_data.js"></script>
+    <script>
+        document.getElementById('button_no').addEventListener('mouseenter', () => {
+            noButtonAttempts++;
+        });
+    </script>
 </body>
 </html>

@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Serif+4:opsz@8..60&display=swap');
+
 body {
     display:flex;
     height: 100vh; 
     margin: 0; 
     background-color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-rendering: auto;
     cursor:default;
 }
 .question {
-    font-family: sans-serif;
+    font-family: 'Source Serif 4', serif;
     font-size: 15vh;
     left: 10vh;
     color: white;
